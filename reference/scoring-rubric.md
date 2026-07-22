@@ -222,8 +222,10 @@ Score against these, not against 10. Both companies below raised successfully at
 
 | Deck | As designed | Note |
 |---|---|---|
-| Airbnb seed (2008) | **7.2** | Excellent structure; no team slide, no ask |
-| Coinbase seed (2012) | **5.5** | Strong traction and polish; no market, model, competition, or ask |
+| Airbnb seed (2008) | **7.1** | Excellent structure; no team slide, no ask. Reproducible from a fresh clone: `python3 tools/score.py` |
+| Coinbase seed (2012) | **5.5** *(provisional)* | Strong traction and polish; no market, model, competition, or ask |
+
+*Coinbase's 5.5 is provisional and not yet reproducible here: the file in `input/` is a later Zlides reconstruction (post-2017 product slides), not the 2012 original, so it can't be re-scored to confirm the figure. Until the 2012 deck is scored with this rubric, treat 5.5 as a recorded estimate, not a checked benchmark.*
 
 **How to read your score.** A **7** means the argument works and you have two or three named, fixable gaps — that is a normal, respectable place for a real deck to sit, and it is where the most-taught seed deck in the world sits. An **8** means complete and competent, which is the realistic target for a deck you are about to send. **9–10 is not the goal** — it is reserved for decks where multiple sections actively create advantage, and chasing it usually means adding slides you do not need.
 
@@ -262,7 +264,7 @@ Band the artifact by **how much was deducted**, not by where the resulting numbe
 
 Always report artifact results as **design score → defect load → artifact score**, with the band drawn from this table. Reporting the artifact number alone invites exactly the wrong conclusion: that a well-built deck is badly built.
 
-> **Worked example.** Airbnb: design **7.2** (*Good, with named gaps*) → defect load **−2.75** (*Unfinished*) → artifact **4.5**. The correct reading is "a well-structured deck sitting in an unfinished file," **not** "a structurally incomplete deck." Its structure is the best thing about it.
+> **Worked example.** Airbnb: design **7.1** (*Good, with named gaps*) → defect load **−2.75** (*Unfinished*) → artifact **4.4**. The correct reading is "a well-structured deck sitting in an unfinished file," **not** "a structurally incomplete deck." Its structure is the best thing about it.
 
 When the two scores diverge, the gap *is* the to-do list: it separates what is fixable tonight from what needs real rework. When they match, there is no cheap win — the problems are structural.
 

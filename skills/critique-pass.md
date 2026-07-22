@@ -4,7 +4,7 @@ workspace: pitch-deck-editor
 last-updated: 2026-07-22
 status: active
 drives: the critique pass (one submission → one critique file)
-inputs: [the deck draft, the declared room, _config/ domain context, reference/pitch-craft.md, reference/room-lenses.md, reference/scoring-rubric.md (investor) or reference/scoring-rubric-sales.md (sales/adoption), prior critique files]
+inputs: [the deck draft, the declared room, _config/ domain context, reference/pitch-craft.md, reference/room-lenses.md, reference/scoring-rubric.md (investor) or reference/scoring-rubric-sales.md (sales/adoption), memory/recurring-patterns.md (cross-deck priming; active-domain entries only), prior critique files]
 ---
 
 # Skill — Critique Pass
@@ -20,6 +20,8 @@ The shape is five core steps (intake → read & judge → spine check → slide 
 **Receive the deck in any form.** Pasted text, an attached file, a slide-by-slide description — all valid. A single slide is a valid submission.
 
 **Load the domain context.** Read the file in `_config/` now (not before — it composes with the engine only when a real deck is in front of you). It gives you the guardian lens for this domain, its terminology, and any claims it refuses to help strengthen. You never critique context-blind.
+
+**Load the priming list.** Read `memory/recurring-patterns.md` at the same time and take the entries whose tag matches the active domain. A fresh deployment's file is empty — that is normal, and it primes nothing; the list only earns weight after real decks in this domain have deposited patterns. These entries are neither rules nor findings — they are a watch-list that feeds the red-flag pass (Step 2.5), and the file's own governance still binds in full: a primed pattern must be quoted and pass the paste test on *this* deck before it can become a note.
 
 **Establish the room:**
 - **First pass on this deck:** ask who it's for — **investor** or **sales/adoption**. Take the answer as the critique lens. Don't assume it; if the deck's contents contradict the founder's answer, you may say so and ask, but the room is always their call.
@@ -39,7 +41,7 @@ Run this six-part protocol as internal reasoning (adapted from the validated eva
 2. **Standalone test.** Cold-read each slide with nobody narrating. ~30% of investor decks are shared internally without the founder present, and most buyer research is rep-free — any slide whose meaning depends on a voiceover is broken. Note every slide that fails.
 3. **Sequence check.** Compare the deck's order to the relevant framework (§1.2 / §2.2 of `pitch-craft.md`). **Order errors outrank content errors** — this feeds the spine check (step 3).
 4. **Title-chain test.** Read only the slide titles in order. Do they form the complete argument on their own? If not, the deck is leaning on its bodies where its headlines should carry it.
-5. **Red-flag pass.** Apply the relevant red-flag list (§1.3 / §2.3) and the domain guardian lens from `_config/`. This is where the domain context bites: the same slide that's merely weak in a neutral domain may trip a domain-specific trust-breaker.
+5. **Red-flag pass.** Apply the relevant red-flag list (§1.3 / §2.3), the domain guardian lens from `_config/`, and the active-domain entries loaded from `memory/recurring-patterns.md` (Step 1). This is where the domain context bites: the same slide that's merely weak in a neutral domain may trip a domain-specific trust-breaker, and a pattern this editor has seen recur before is worth an extra look here. The recurring-patterns entries only prime the look — a fresh, empty file primes nothing, and even a full one never licenses a note on its own. Anything they surface still has to clear all four gates on this deck's exact words.
 6. **Context calibration.** Adjust severity for stage (investor: pre-seed vs. Series A) or deal size (sales: transactional vs. enterprise). Don't apply seed-deck rules to a Series B deck, or full Challenger-arc expectations to a small transactional sale.
 
 **On a rework pass:** read the prior passes alongside. Do **not** re-raise a note the founder has already fixed — check the current deck against the prior critique and note convergence ("the abstraction-stack problem from pass 1 is resolved — the solution slide now names the artifact"). Track whether the deck is getting stronger.

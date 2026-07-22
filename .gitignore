@@ -5,9 +5,3 @@ __MACOSX/
 # Windows
 Thumbs.db
 desktop.ini
-
-# Per-run deck drafts and critique passes — produced by a run, not part of the engine
-input/*
-!input/.gitkeep
-output/*
-!output/.gitkeep

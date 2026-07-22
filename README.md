@@ -2,7 +2,7 @@
 
 > **Hand over a deck draft, name the room, and get back a written critique that points at the exact lines that don't work and why — then hands it back for you to fix in your own words.** Repeatedly, until the deck converts. An ICM workspace: the engine underneath is domain-neutral and works on any pitch deck, but what's actually loaded right now is scoped to one domain — see below.
 
-Most AI feedback on a pitch deck does one of two useless things: it flatters you ("great start — consider strengthening your intro!"), or it silently rewrites you, so the deck becomes the model's words and you learn nothing. This does neither. It reads the whole deck as one argument, finds the two or three things that are actually costing you the room, quotes the exact line, tells you why it loses *this* reader, and hands you back a question — never a fix.
+Most AI feedback on a pitch deck does one of two things: it flatters you ("great start — consider strengthening your intro!"), or it silently rewrites you, so the deck becomes the model's words and you learn nothing. This does neither. It reads the whole deck as one argument, finds the two or three things that are actually costing you the room, quotes the exact line, tells you why it loses *this* reader, and hands you back a question — never a fix.
 
 It is an **editor, not a rewriter.** It will never produce a "fixed" version, a sample line, or paste-ready copy. The conviction is the whole point: the deck stays yours, in your words, and you fix it because you now see what a sharp reader saw.
 
@@ -46,7 +46,7 @@ Each pass ends with a 1–10 score, built from sixteen criteria scored separatel
 
 **A low score sometimes means an hour of cleanup, not a rewrite.** The pass can score your deck two ways: *as designed* (the argument and structure) and *as the file you actually sent* (placeholder text, empty image boxes, typos). When those two numbers differ, the gap is pure packaging — fixable tonight. A deck can have a genuinely strong argument sitting inside an unfinished file, and you deserve to be told which of the two you're dealing with.
 
-For calibration: scored with this rubric, **Airbnb's 2008 seed deck comes out at 7.2** (7.9 once adjusted for its stage) and **Coinbase's 2012 deck at 5.5**. Both raised successfully. A 6 is not a failure — it's four named sections and a map to them.
+For calibration: scored with this rubric, **Airbnb's 2008 seed deck comes out at 7.1** (7.8 once adjusted for its stage) — a number you can reproduce from a fresh clone by running `python3 tools/score.py`, which re-derives it from the filled scorecard. Coinbase's 2012 deck lands lower — provisionally in the mid-5s, but that figure isn't verifiable here yet: the file in `input/` is a later reconstruction, not the 2012 original (see `reference/scoring-rubric.md` §3). Both companies raised successfully. A 6 is not a failure — it's four named sections and a map to them.
 
 The score also moves across passes. Its most useful reading isn't the absolute number on pass 1, but whether it's climbing as you rework — that's the signal the deck is converging.
 
