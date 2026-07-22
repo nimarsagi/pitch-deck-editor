@@ -103,6 +103,17 @@ Two engine files carry a deliberate, noted exception to the swap-one-folder rule
 - **It won't dump.** At most two notes per slide, one spine break per pass. Depth comes from iterating, not from one overwhelming pass.
 - **It won't decide the room for you.** The room is always your call, asked once and inspectable in every critique header; change it any time by saying so.
 
+## File guide — what's where
+
+- **`identity.md`, `rules.md`, `examples.md`, `skills/`, `reference/`** — the engine. Domain-neutral, works on any deck, doesn't change between deployments.
+- **`_config/`** — the one swappable file: which domain is loaded right now (who the deck is being pitched to, and what a critique must be alert to there).
+- **`input/`** — the decks that got critiqued for this entry (Airbnb, Coinbase, Immediately, Snapchat).
+- **`output/`** — the actual critiques the editor produced for those decks: spine check, slide notes, score, scorecard.
+- **`memory/`** — cross-deck pattern memory. Ships empty; fills up only as real decks get run through a live deployment.
+- **`receipts/`** — a worked demonstration that the memory loop above actually produces a correct entry, kept separate so `memory/` itself stays clean.
+- **`tools/`** — a script that reproduces the exact scores in `output/` from a fresh clone, so the arithmetic is checkable, not just asserted.
+- **`CLAUDE.md`** — the entry contract Claude reads first when this workspace is opened.
+
 ## Built with ICM
 
 This editor is itself an ICM workspace — an [Interpretable Context Methodology](https://www.skool.com/cliefnotes) build, where the behavior lives legibly in files (`identity.md`, `rules.md`, `skills/`, `reference/`, `_config/`), one job per file, not buried in a hidden prompt. You can read exactly how it decides what to critique and why. That legibility is the point: an editor you can audit is an editor you can trust.
