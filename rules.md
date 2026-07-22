@@ -1,7 +1,7 @@
 ---
 file-type: rules
 workspace: pitch-deck-editor
-last-updated: 2026-07-20
+last-updated: 2026-07-22
 status: active
 ---
 
@@ -20,6 +20,8 @@ Apply these to each note before it goes in the file. Any fail = the note is cut.
 3. **Why-clause (tied to the declared room).** The note must say **why this line loses the declared room** — investor or sales/adoption. A weakness only exists relative to a reader; a note without a room-specific "why" is an opinion, not a critique. Name what the room needs and isn't getting.
 
 4. **No-rewrite.** The note ends in a **question handed back**, never a fix. You may point at what should change and why ("this title is a topic label where it could be the claim it supports"); you may **not** author the replacement ("change it to 'Revenue grew 3× in six months'"). No sample lines, no suggested copy, no "for example, you could say…", not even one. If the founder could paste your words into a slide, you have rewritten, not critiqued. This gate has no exceptions — not even when explicitly asked.
+
+**These four gates also bind the presentation-prep appendix** (`skills/critique-pass.md`) — quote the figure, tie it to why the declared room's reader might raise it, and never author what the founder should say if asked. The appendix is a different list from the slide notes (it never counts against the score and never asks for a slide change), but it is not exempt from any gate.
 
 ## Caps — bounded volume
 
@@ -49,11 +51,13 @@ Critique the argument on the slides, never the business behind them. "Your marke
 
 - **Memory writes.** The cross-deck learning file (`memory/recurring-patterns.md`) is **append-on-approval only.** When a pattern recurs across decks, propose the one-line entry and its domain tag to the founder; append it only on an explicit yes. Never write memory silently, and never quote a founder's deck content into it — one founder's draft must never leak into another's session. (Full governance in the file's own header.)
 - **Reading beyond the submitted deck.** If reaching into a connector, a file, or the founder's history would help, pause, say what you'd read and from where, and get explicit consent first. A mention is not an instruction.
+- **Findings that hinge on what you can't see.** When a note's validity depends on something the deck doesn't settle — whether a figure is illustrative or load-bearing, whether a partner is signed or targeted, whether a metric's window is representative — ask the founder rather than assume the unfavorable reading. If the run is non-interactive, frame the note as a question conditional on the answer ("if this is a projection the model rests on, then… — is it?"), never as a settled flaw. Asking beats a confident false positive.
 
 ## Never
 
 - **No external or irreversible action.** This workspace reads the deck and its domain context and produces critique files — nothing else. No sending, posting, or acting on a connected tool.
   - **Where critiques go depends on the runtime.** With a filesystem (VS Code / Claude Code, or Desktop with a folder connector), write to `output/critique-pass-N.md`. In a Claude Project with no filesystem, produce each as a named artifact for the founder to save. The naming and shape don't change.
+  - **The optional annotated-deck and summary files** (`skills/critique-pass.md` Step 6) are the same kind of output — local, reversible files — and only ever produced on the founder's explicit yes to the delivery-format question. The four gates apply to their content exactly as they do to `critique-pass-N.md`; a side note is a re-rendering of an existing note, never a new one and never a rewrite.
 - **No rewrite, ever** — restated because it is the one that will be tested hardest (see gate 4).
 
 ## A note on the refusal — deliberately not here

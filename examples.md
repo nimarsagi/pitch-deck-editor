@@ -1,7 +1,7 @@
 ---
 file-type: examples
 workspace: pitch-deck-editor
-last-updated: 2026-07-20
+last-updated: 2026-07-22
 status: active
 referenced-by: [critique-pass]
 ---
@@ -55,58 +55,55 @@ Overall this is 80% of the way there — a few tweaks and you're golden!
 # Critique — acme-ai, Pass 1 (sales/adoption)
 
 ## Spine check
-The spine breaks at the top. Slide 1 opens "Fully autonomous finance operations.
-No humans required." — then the deck never shows how a skeptical finance team stays
-in control of its own books. For a sales/adoption room primed to distrust AI in a
-high-stakes function, the argument's first move is also its biggest liability: it
-promises the exact thing (unattended automation of the money) the reader most fears,
-and nothing downstream earns that trust back. This break outranks every slide note.
+The deck breaks on slide 1. It opens with "Fully autonomous finance operations.
+No humans required." — then never shows how a finance team stays in control of its
+own books. A finance buyer's biggest fear is unattended AI on the money, and the very
+first slide confirms that fear instead of answering it. Nothing later earns the trust
+back. Fix this before any single slide.
 
 ## Slide notes
 
 ### Slide 1 — Title
-- **Line:** "Fully autonomous finance operations. No humans required."
-  **Problem:** the oversell (see `_config/`) — and, to a finance buyer, a threat, not a benefit.
-  **Why it loses the sales/adoption room:** this reader fears exactly unattended AI on
-  their books; "no humans required" confirms the fear on slide 1 instead of converting it.
-  The human gate is your strongest trust signal and the headline throws it away.
-  **Hand back:** who stays in control of the reconciliation, and what do they see and sign
-  off on — and how would the headline read if that control were the promise?
+"Fully autonomous finance operations. No humans required." To a finance buyer this reads
+as a threat, not a selling point — they fear exactly this, and slide 1 confirms the fear
+instead of easing it. The human check is your strongest trust signal, and the headline
+throws it away. What would the headline say if the person staying in control were the promise?
 
 ### Slide 3 — Solution
-- **Line:** "Our AI does your reconciliation end-to-end. It just works."
-  **Problem:** magic-box framing — "it just works" gives a skeptic nothing to verify (basis:
-  `_config/` trust-breakers; `pitch-craft.md` §2.1, buyers self-educate and need to trust).
-  **Why it loses the sales/adoption room:** a finance team can't adopt what it can't audit;
-  "it just works" is precisely what a burned buyer has heard before and stopped believing.
-  **Hand back:** when the AI is unsure or wrong, what happens — and who catches it?
+"Our AI does your reconciliation end-to-end. It just works." A finance team can't adopt
+what it can't check, and "it just works" is the line a burned buyer has heard before and
+stopped believing — it gives a skeptic nothing to verify. When the AI is unsure or wrong,
+what happens, and who catches it?
 
 ### Slide 5 — Close
-- **Line:** "Trusted by leading companies. Questions?"
-  **Problem:** no proof and no next step — a logo-less trust claim, and "Questions?" is a
-  missing CTA (basis: `pitch-craft.md` §2.3, both high-severity for a sales deck).
-  **Why it loses the sales/adoption room:** "leading companies" with no name, outcome, or
-  timeframe is unfalsifiable; and the deck ends without asking for the one small next step
-  that moves a deal.
-  **Hand back:** which named customer, what measured result, over what timeframe — and what
-  is the single lowest-friction next step you want this reader to take?
+"Trusted by leading companies. Questions?" Two problems. "Leading companies" with no name,
+number, or timeframe is a claim nobody can check. And ending on "Questions?" asks the reader
+for nothing — a sales deck should close on one small, easy next step. Which named customer,
+what result, over what timeframe — and what's the one low-effort next step you want them to take?
 
 ## What's working
-- **Slide 2 — "Finance teams waste 20+ hours a week on manual reconciliation."** A concrete,
-  quantified pain in the reader's own operational language. This is the deck's firmest ground —
-  don't dilute it; the rest of the deck should earn the right to solve *this*.
+Slide 2 — "Finance teams waste 20+ hours a week on manual reconciliation." A concrete,
+quantified pain in the buyer's own words. This is the deck's firmest ground; don't dilute
+it — the rest should earn the right to solve this.
 
-## Pass score: 3/10
-The pain (slide 2) is real and specific, but the spine inverts the domain's core move —
-it leads with the reader's fear instead of converting it, and offers nothing to audit.
-Fixing the control story and grounding the proof would move this most.
+## Score
+A 3 out of 10. The pain on slide 2 is real and specific, but the deck leads with the buyer's
+fear instead of answering it, and gives them nothing to check.
+
+**Worth fixing first:**
+1. The control story — show where a human stays in charge, so slide 1 stops confirming the fear.
+2. Real proof — one named customer, a measured result, a timeframe, in place of "leading companies."
+3. A real next step — end on one small ask, not "Questions?"
+
+[In a real critique file the full scorecard sits at the very bottom; omitted from this excerpt.]
 ```
 
 ### How each note passes the gates
 
 - **Every note quotes an exact line** (gate 1) and would be **nonsense on another deck** (gate 2) — "no humans required" and "it just works" are *these* words.
-- **Every why-clause is tied to the sales/adoption room** (gate 3) and to the loaded domain — the finance buyer's specific distrust.
+- **The why is tied to the sales/adoption room** (gate 3) and to the loaded domain — the finance buyer's specific distrust — even though there's no "why it loses the room" label; it's woven into the sentence.
 - **Every note ends in a question, authors no copy** (gate 4). Note the difference from Example 1: here the title note *points at* the missing control story and asks how the headline would read if control were the promise — it does **not** write the new headline.
+- **Plain, and said once** — each note is a few plain sentences, no Tier or section labels, no problem/why/ask scaffold, the point made a single time. That's the readable shape, and it's what the founder can act on at a glance.
 - **Honesty in both directions** — slide 2 is named as a real strength, quoted, with the same rigor as the faults; the score is low but reasoned, not punitive.
 - **Caps hold** — one spine break, ≤2 notes per slide, slide 4 left for a later pass.
 

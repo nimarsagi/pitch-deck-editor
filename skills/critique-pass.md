@@ -1,17 +1,17 @@
 ---
 file-type: skill
 workspace: pitch-deck-editor
-last-updated: 2026-07-20
+last-updated: 2026-07-22
 status: active
 drives: the critique pass (one submission → one critique file)
-inputs: [the deck draft, the declared room, _config/ domain context, reference/pitch-craft.md, reference/room-lenses.md, prior critique files]
+inputs: [the deck draft, the declared room, _config/ domain context, reference/pitch-craft.md, reference/room-lenses.md, reference/scoring-rubric.md (investor) or reference/scoring-rubric-sales.md (sales/adoption), prior critique files]
 ---
 
 # Skill — Critique Pass
 
 The procedure for one pass: a founder submits a deck, you return one `critique-pass-N.md`. Runs the same way every time; the iteration lives in *use* — the founder fixes, returns, and you run it again. Read `identity.md` and `rules.md` first (the entry contract already directed this); the gates in `rules.md` wrap every step here.
 
-The shape is five steps (intake → read & judge → spine check → slide notes → write & hand back). Under the hood, step 2 runs a fuller six-part evaluation protocol (below) — that is your *internal reasoning*, what you look for; the **caps govern what surfaces.** The protocol runs in full; the pass shows the prioritized subset. Do not let the protocol's "find everything" instinct override the overwhelm caps — those caps are a deliberate design choice.
+The shape is five core steps (intake → read & judge → spine check → slide notes → write & hand back), plus an optional sixth (annotated delivery — asked, never assumed). Under the hood, step 2 runs a fuller six-part evaluation protocol (below) — that is your *internal reasoning*, what you look for; the **caps govern what surfaces.** The protocol runs in full; the pass shows the prioritized subset. Do not let the protocol's "find everything" instinct override the overwhelm caps — those caps are a deliberate design choice.
 
 ---
 
@@ -59,12 +59,17 @@ The spine check opens the critique file. A structural identity error from step 2
 
 ## Step 4 — Slide notes
 
-Up to **two notes per slide** (the cap), each surviving all four gates in `rules.md`. Structure every note as exactly these four parts:
+Up to **two notes per slide** (the cap), each surviving all four gates in `rules.md`. Write each note as a few plain sentences — the way you'd say it across a table — not a labeled template. Every note still carries the same three things, now woven into the prose instead of stapled under headings:
 
-1. **The quoted line** — the exact words from the slide (quote gate).
-2. **The problem, named** — what's wrong, named precisely; use the failure's name where one exists ("this is the top-down TAM trap," "this title is a topic label, not a claim"). Cite the basis: a section of `pitch-craft.md`, the domain lens, or — if it's your own read outside the rules — label it *"my own judgment, outside the reference."*
-3. **Why it loses the declared room** — tied to what an investor / a sales reader needs and isn't getting here (why-clause gate). Match confidence to the evidence tier.
-4. **The question handed back** — the question whose honest answer fixes the slide. Never the fix itself (no-rewrite gate).
+- **The exact line or number** you're reacting to — quote it (quote gate; no quote, no note).
+- **Why it costs them this room** — what the investor or sales reader does with this weakness (why-clause gate).
+- **The open question left with them** — point at what they must resolve; never write the fix (no-rewrite gate). Fold it into the closing sentence, not a repeating "ask yourself" line.
+
+**Say each point once.** Don't restate it from a second angle, don't put rubric sections or tiers or evidence figures in the note itself (they live in your reasoning and the backup scorecard), and keep a single finding to a few sentences. The gates are about substance — quote, room, no-rewrite — not a rigid shape: keep the substance, drop the scaffold. Where a note rests on your own read rather than a known pattern, still say so, in plain words ("this is my read, not a hard rule").
+
+**Calibrate before you flag (illustrative vs. load-bearing).** For every candidate finding that rests on a number or a claim, first decide whether the deck's argument *depends* on it. Load-bearing, and it contradicts another figure, is false or absurd at face value, or the category it belongs to is missing outright → a fair note. Load-bearing but merely lacking an on-slide source or derivation → not a slide defect (`identity.md`); slides should stay simple. Illustrative or directional (there to convey scale, not to be underwritten) → leave it unless the illustration itself misleads. Can't tell from the deck → hand it back as a question (or, if the founder is present, ask before writing the note), never assert it as a flaw. This is the false-positive guard that keeps the pass from reading as pedantry (`rules.md`: the honesty gate and Ask first).
+
+**Track appendix candidates separately from slide notes.** A load-bearing figure or claim that lacks on-slide support is not a slide defect — but if a sharp investor or customer in the declared room could reasonably ask about it live, it's an appendix candidate: something the founder should be ready to defend, not something the slide should show. Keep this list distinct from the slide notes — it never counts against the score and never suggests changing the slide. Only load-bearing figures qualify; illustrative ones don't belong here either.
 
 Before writing each note, run the **paste test**: could it land unchanged on another founder's deck? If yes, cut it.
 
@@ -78,11 +83,40 @@ Then, **what's working:** name the specific slides and lines that are carrying t
 
 **Assemble the critique file** — `output/critique-pass-N.md` — using the template below. Header carries deck id, pass number, declared room, date, and any unstructured-input note.
 
-**Close with the pass score (1–10).** A single score for *this pass*, judged against the standards in `pitch-craft.md`. It is a **convergence signal**, not a grade: pass 1 might be a 5, pass 3 an 8 as the founder fixes what the notes flagged. It follows the honesty gate — a strong deck scores high with few or no notes; never lowball to manufacture work, never inflate to be kind. One line of reasoning for the number. The score never replaces the notes.
+**Close with the pass score (1–10).** A single score for *this pass*, scored with the rubric matching the declared room — `reference/scoring-rubric.md` for investor decks, `reference/scoring-rubric-sales.md` for sales/adoption decks. Scoring a deck with the wrong rubric invalidates the number exactly as misclassifying the room invalidates the critique (`pitch-craft.md` §0). It is a **convergence signal**, not a grade: pass 1 might be a 5, pass 3 an 8 as the founder fixes what the notes flagged. It follows the honesty gate — a strong deck scores high with few or no notes; never lowball to manufacture work, never inflate to be kind. The score never replaces the notes.
+
+**Give the score in plain words first; the full sheet is backup at the bottom.** Lead with one plain sentence — what the number means, not how it was computed ("a 7 out of 10 — the argument works, two gaps worth fixing"). That, plus the notes, is what the founder reads. The filled score sheet still appears in **both the critique file and the chat hand-back**, but at the very bottom as a scorecard they can check row by row — not the first thing they meet. Never a bare number with no sheet behind it; equally, never make them read the sheet to understand the feedback. Keep the p-value arithmetic, any N/A reasons, and — where the sales rubric applies — whether the high-severity gate fired and the cap bound, down in that scorecard, in plain words.
+
+**Comprehensibility is an explicit dimension of the score:** how easily the deck is understood, fast and unaccompanied. A deck that reads simply and lands its points quickly scores higher than a dense one — clarity beats completeness. The one exception is the crucial-detail floor (`identity.md`): a deck that reads simply *because it cut something the argument depends on* hasn't earned the clarity reward — score that as the fault it is, not the simplicity it looks like. If you're unsure whether an omitted detail was load-bearing, ask before you score.
+
+**Offer per-criterion clarification — ask once, never pre-empt.** Immediately after handing over the score, ask which line of the sheet the founder wants opened up: *"Any row on there you want me to unpack?"* Then stop. Do **not** pre-emptively explain every criterion — that is exactly the dump the overwhelm caps exist to prevent, and it buries the two or three things that actually matter. The score sheet shows *where* the points went; the clarification explains *why*, and only for the row they choose.
+
+When they name a row, answer in the six-move shape set out in `reference/scoring-rubric.md` §7 — credit first, evidence quoted from their deck, the load-bearing flaw traced, the cheap fix separated from the expensive one, what would move the score with the points attached, and the fairness caveat if the criterion may not apply at their stage. The no-rewrite rule holds here in full: describe what would move the score, never author it.
+
+The six moves are a structure, not a licence to write an essay — but the compression they invite has a failure mode of its own. Apply `identity.md`'s "brevity means cutting prose, not evidence" here specifically: a clarification that names a fix without saying what the fix concretely is ("reorder it", "add the stakes step") has answered nothing, and the founder spends another question recovering what was cut. And it is plain prose, not six labeled paragraphs: the moves are your checklist, not the format the founder reads — each point once, no tiers or section numbers on the page.
+
+**Assemble the presentation-prep appendix.** Every critique file closes with a `## Appendix — presentation prep` section: one entry per appendix candidate from Step 4, each quoting the figure or claim, naming why the declared room's reader might raise it live, and naming what ground the founder should be ready to cover if asked — never the answer itself (the no-rewrite gate applies here in full, per `rules.md`). If nothing qualified this pass, say so plainly rather than omitting the section, so the founder knows it was checked, not skipped.
 
 **Propose a memory entry, if warranted.** If a cross-deck pattern recurred in this pass (a failure you've now seen across multiple decks), propose a one-line entry for `memory/recurring-patterns.md` and its domain tag — and **append only on the founder's explicit yes** (`rules.md`). Never quote deck content into memory. If nothing recurred, skip this silently.
 
 **Hand the deck back.** The founder fixes it in their own words and returns for the next pass. Say so — the loop is the tool.
+
+---
+
+## Step 6 — Optional: annotated delivery (asked, never assumed)
+
+After `critique-pass-N.md` is written and handed back, ask once: **"Do you also want this delivered as comments on the deck itself?"** This is a delivery-format question, not a content question — say no more by default. Proceed only on an explicit yes; a plain no (or no answer) means stop here — `critique-pass-N.md` alone is the complete pass for this round.
+
+**On yes, produce two more files, both derived from the same notes already written — no new critique content is generated for this step:**
+
+1. **`output/critique-pass-N-annotated.[pptx|pdf]`** — a copy of the submitted deck, same format as submitted, with each slide's notes (from Step 4) attached as **side notes, never on the slide canvas**:
+   - **PPTX submitted → PPTX out:** write each slide's notes into that slide's **speaker-notes pane** (commonly via `python-pptx`'s `notes_slide`). The visible slide is untouched pixel-for-pixel.
+   - **PDF submitted → PDF out:** attach each slide's notes as **page annotations** (sticky-note / pop-up comment objects anchored to the page, commonly via PyMuPDF or pypdf's annotation APIs) — not stamped into the page content stream. A reader must be able to hide every annotation and see the original slide underneath.
+   - Slides with no notes get none added — don't manufacture a comment to fill every slide.
+   - The four gates (`rules.md`) still apply verbatim to this content — it is the identical note, re-rendered. **The no-rewrite gate has no exception here either:** a side note may point at what's wrong and hand back the question, exactly as in the file version; it may not become a place to slip in the fix because it's "just a comment."
+2. **`output/critique-pass-N-summary.md`** — the non-slide-specific parts of the critique (spine check, what's working, pass score, convergence) as their own file, since none of it anchors to a single slide and so has nowhere to live in the annotated deck.
+
+**No-filesystem runtime (Claude Project):** produce the annotated deck and the summary as two named artifacts instead of files, same shapes.
 
 ---
 
@@ -106,20 +140,38 @@ input-note: [omit unless mapped from unstructured input]
 
 ## Slide notes
 ### [Slide / section name]
-- **Line:** "[exact quote]"
-  **Problem:** [named; basis cited]
-  **Why it loses the [room]:** [room-specific, confidence matched to tier]
-  **Hand back:** [the question]
-[≤ 2 notes per slide]
+[A few plain sentences per note: quote the exact line or number, say why it costs this room, and leave the open question. No labels, no rubric citations, no repeating the point. ≤ 2 notes per slide.]
 
 ## What's working
 [Specific, quoted strengths — what not to break.]
 
-## Pass score: N/10
-[One line: what the score reflects and what would move it next pass.]
+## Score
+[One plain line: the number and what it means — "As designed: 7 out of 10 — the argument works; two gaps worth fixing." If the file has defects that drop it, add a second plain line — "As the file stands: 4 — the structure's fine, but it's not sendable yet (lorem text on slide 10)." If a sales high-severity gate fired, say so plainly with the number — "capped at 6.9 — no clear next step."]
+
+**Worth fixing first:**
+1. [the fix that gains the most, in plain words — what's weak and what fixing it gets them]
+2. [second]
+3. [third]
 
 ## Convergence (rework passes only)
 [What's resolved since the prior pass; what's still open.]
+
+## Appendix — presentation prep
+[One entry per load-bearing figure/claim lacking on-slide support that a sharp investor/customer might probe live. Never scored; never a suggestion to change the slide.]
+- **Item:** "[the figure or claim, quoted]"
+  **Likely to come up because:** [why this room's reader would probe it]
+  **Be ready to:** [what ground to cover if asked — not the answer]
+[Or, if none qualified: "No items this pass — the load-bearing figures here are either supported on-slide or not the kind a reader is likely to probe."]
+
+## Scorecard (backup)
+[Check-my-work, not the lead — the founder reads this only if they want to. The filled sheet, plus the arithmetic and any N/A reasons in plain words.]
+
+| # | Criterion | Tier | Wt | Level | Points |
+|---|---|---|---|---|---|
+| … | … | … | … | n/3 | n/max |
+| | | | **Total** | | **/105** |
+
+p = earned ÷ possible → [arithmetic]. As designed: N.N — [band]. [If it differs: as the artifact given N.N — design → defect load → artifact. N/A calls with one-line reasons, or "none marked N/A".]
 ```
 
 In a no-filesystem runtime (Claude Project), produce this as a named artifact for the founder to save, same shape.

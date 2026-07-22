@@ -50,7 +50,8 @@ pitch-deck-editor/
 ├── _config/           ← THE SLOT: swap its contents to re-domain the editor
 │   └── icm-ai-startups.md      ← flagship context: the credibility-guardian lens
 ├── input/             ← deck drafts land here (pasting into chat is equally valid)
-└── output/            ← critique-pass-N.md per pass (declared room recorded in header)
+└── output/            ← critique-pass-N.md per pass (declared room recorded in header);
+                          annotated-deck + summary files on explicit request (see below)
 ```
 
 ---
@@ -59,6 +60,13 @@ pitch-deck-editor/
 
 One deck under review produces a numbered series of critique files, one per pass:
 
-- `output/critique-pass-N.md` — the critique for pass N (N = 1, 2, 3, …)
+- `output/critique-pass-N.md` — the critique for pass N (N = 1, 2, 3, …). Always produced; the source of truth.
 
 Each file's header records the deck id, the pass number, the declared room, and the date. The room-in-header is the continuity mechanism: pass N reads pass N−1, critiques for the same room, and does not re-ask.
+
+**Optional, on explicit yes only** (`skills/critique-pass.md` Step 6): after handing back `critique-pass-N.md`, the founder is asked whether they also want the pass delivered as comments on the deck itself. If yes, two more files join the set for that pass:
+
+- `output/critique-pass-N-annotated.[pptx|pdf]` — a copy of the submitted deck with the slide notes attached as side notes (PowerPoint speaker notes, or PDF page annotations) — never written onto the slide canvas.
+- `output/critique-pass-N-summary.md` — the non-slide-specific feedback (spine check, what's working, pass score, convergence) as its own file, since it doesn't anchor to one slide.
+
+If the answer is no, neither file is produced — `critique-pass-N.md` alone stands as the complete pass.
