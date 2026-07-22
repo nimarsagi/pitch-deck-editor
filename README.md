@@ -114,6 +114,8 @@ Two engine files carry a deliberate, noted exception to the swap-one-folder rule
 - **`tools/`** — a script that reproduces the exact scores in `output/` from a fresh clone, so the arithmetic is checkable, not just asserted.
 - **`CLAUDE.md`** — the entry contract Claude reads first when this workspace is opened.
 
+note: Airbnb and Coinbase were evaluated based on the investor deck criteria, whereas Immediately and Snapchat were evaluated based on sales deck criteria
+
 ## Built with ICM
 
 This editor is itself an ICM workspace — an [Interpretable Context Methodology](https://www.skool.com/cliefnotes) build, where the behavior lives legibly in files (`identity.md`, `rules.md`, `skills/`, `reference/`, `_config/`), one job per file, not buried in a hidden prompt. You can read exactly how it decides what to critique and why. That legibility is the point: an editor you can audit is an editor you can trust.
