@@ -218,14 +218,15 @@ Worked example of the weighting: taking **Team** from Unacceptable to Target ear
 
 ### Benchmarks — where known decks land
 
-Score against these, not against 10. Both companies below raised successfully at these scores.
+There is exactly **one** anchored benchmark here, and it is reproducible from a fresh clone. Score against it, not against 10.
 
 | Deck | As designed | Note |
 |---|---|---|
-| Airbnb seed (2008) | **7.1** | Excellent structure; no team slide, no ask. Reproducible from a fresh clone: `python3 tools/score.py` |
-| Coinbase seed (2012) | **5.5** *(provisional)* | Strong traction and polish; no market, model, competition, or ask |
+| Airbnb seed (2008) | **7.1** | Excellent structure; no team slide, no ask. Airbnb raised successfully at this score. Reproducible: `python3 tools/score.py` re-derives it from the filled scorecard |
 
-*Coinbase's 5.5 is provisional and not yet reproducible here: the file in `input/` is a later Zlides reconstruction (post-2017 product slides), not the 2012 original, so it can't be re-scored to confirm the figure. Until the 2012 deck is scored with this rubric, treat 5.5 as a recorded estimate, not a checked benchmark.*
+**Why there is no Coinbase benchmark.** An earlier draft of this table carried "Coinbase seed (2012): 5.5" — that number is retired, because nothing here derives it. The 2012 original was never scored with this rubric, and the file in `input/` is not the 2012 deck: it is a later Zlides marketing reconstruction (post-2017 product slides, logos for tokens that didn't exist in 2012 — see `output/written-output/critique-pass-1-coinbase.md`). The rule this whole workspace runs on is that a number asserted without its arithmetic is a number nobody has checked, so an uncheckable 5.5 does not belong next to a reproducible 7.1.
+
+The one Coinbase figure that *is* reproducible is the **4.8** the scorer emits for the reconstruction itself (`python3 tools/score.py`). Treat it as a score for that marketing artifact, **not** as a benchmark for Coinbase's real 2012 raise — a reconstruction is not the original, and the score of a marketing rebuild says nothing about the deck the company actually raised on. A genuine Coinbase benchmark waits on the 2012 deck being obtained and scored; until then, Airbnb stands alone.
 
 **How to read your score.** A **7** means the argument works and you have two or three named, fixable gaps — that is a normal, respectable place for a real deck to sit, and it is where the most-taught seed deck in the world sits. An **8** means complete and competent, which is the realistic target for a deck you are about to send. **9–10 is not the goal** — it is reserved for decks where multiple sections actively create advantage, and chasing it usually means adding slides you do not need.
 

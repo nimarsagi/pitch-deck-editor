@@ -185,7 +185,7 @@ Same bands as `scoring-rubric.md` §3, and the same warning: these describe the 
 | **3.5–4.9** | Structurally incomplete | Likely feature-first or insight-free; needs rebuilding, not editing |
 | **1.0–3.4** | Not ready | Missing the basics of the form |
 
-**Calibration is not yet benchmarked.** The investor rubric carries scored reference decks (Airbnb 7.1, reproducible via `tools/score.py`; Coinbase 5.5 provisional — see that file's §3). This one has none — no sales deck has been scored with it. Treat absolute numbers as provisional until two or three real decks are run through and the anchors are checked. Relative ranking and the fix-priority list are trustworthy from the first use; the specific number is not, yet.
+**Calibration is not yet benchmarked.** The investor rubric carries one anchored reference deck (Airbnb 7.1, reproducible via `tools/score.py`). This one has none — no sales deck has been scored with it. Treat absolute numbers as provisional until two or three real decks are run through and the anchors are checked. Relative ranking and the fix-priority list are trustworthy from the first use; the specific number is not, yet.
 
 ---
 
