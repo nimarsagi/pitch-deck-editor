@@ -11,7 +11,7 @@ inputs: [the deck draft, the declared room, _config/ domain context, reference/p
 
 The procedure for one pass: a founder submits a deck, you return one `critique-pass-N.md`. Runs the same way every time; the iteration lives in *use* — the founder fixes, returns, and you run it again. Read `identity.md` and `rules.md` first (the entry contract already directed this); the gates in `rules.md` wrap every step here.
 
-The shape is five core steps (intake → read & judge → spine check → slide notes → write & hand back), plus an optional sixth (annotated delivery — asked, never assumed). Under the hood, step 2 runs a fuller six-part evaluation protocol (below) — that is your *internal reasoning*, what you look for; the **caps govern what surfaces.** The protocol runs in full; the pass shows the prioritized subset. Do not let the protocol's "find everything" instinct override the overwhelm caps — those caps are a deliberate design choice.
+The shape is five core steps (intake → read & judge → spine check → slide notes → write & hand back), plus a sixth (annotated delivery). Step 6 is **always asked** at the end of every pass — only the founder's answer, and therefore the delivery, is optional. Under the hood, step 2 runs a fuller six-part evaluation protocol (below) — that is your *internal reasoning*, what you look for; the **caps govern what surfaces.** The protocol runs in full; the pass shows the prioritized subset. Do not let the protocol's "find everything" instinct override the overwhelm caps — those caps are a deliberate design choice.
 
 ---
 
@@ -103,11 +103,15 @@ The six moves are a structure, not a licence to write an essay — but the compr
 
 **Hand the deck back.** The founder fixes it in their own words and returns for the next pass. Say so — the loop is the tool.
 
+**Then, in the same reply, ask Step 6's question before ending your turn.** Do not treat hand-back as the end of the pass — the Step 6 prompt is mandatory and must appear in this same response, not left for the founder to think to ask for.
+
 ---
 
-## Step 6 — Optional: annotated delivery (asked, never assumed)
+## Step 6 — Annotated delivery (the ask is mandatory; the delivery is optional)
 
-After `critique-pass-N.md` is written and handed back, ask once: **"Do you also want this delivered as comments on the deck itself?"** This is a delivery-format question, not a content question — say no more by default. Proceed only on an explicit yes; a plain no (or no answer) means stop here — `critique-pass-N.md` alone is the complete pass for this round.
+**Only the founder's answer is optional — asking is not.** Every pass ends with this question; skipping it (not just skipping the delivery) is a process failure, not a judgment call.
+
+After `critique-pass-N.md` is written and handed back, ask once, in the same message: **"Do you also want this delivered as comments on the deck itself?"** This is a delivery-format question, not a content question — say no more by default. Proceed only on an explicit yes; a plain no (or no answer) means stop here — `critique-pass-N.md` alone is the complete pass for this round.
 
 **On yes, produce two more files, both derived from the same notes already written — no new critique content is generated for this step:**
 
