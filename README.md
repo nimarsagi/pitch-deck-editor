@@ -107,7 +107,7 @@ Two engine files carry a deliberate, noted exception to the swap-one-folder rule
 
 - **`identity.md`, `rules.md`, `examples.md`, `skills/`, `reference/`** — the engine. Domain-neutral, works on any deck, doesn't change between deployments.
 - **`_config/`** — the one swappable file: which domain is loaded right now (who the deck is being pitched to, and what a critique must be alert to there).
-- **`input/`** — the decks that got critiqued for this entry (Airbnb, Coinbase, Immediately, Snapchat, SequoiaCapital).
+- **`input/`** — the decks that got critiqued for this entry (Airbnb, Coinbase, Immediately, Snapchat, Zuora).
 - **`output/`** — the actual critiques the editor produced for those decks: spine check, slide notes, score, scorecard.
 - **`memory/`** — cross-deck pattern memory. Ships empty; fills up only as real decks get run through a live deployment.
 - **`receipts/`** — a worked demonstration that the memory loop above actually produces a correct entry, kept separate so `memory/` itself stays clean.
